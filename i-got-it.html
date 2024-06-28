@@ -73,6 +73,8 @@
       function update(){
             let final=`wins :${score.wins}  losses :${score.losses}  ties :${score.ties}`
             document.querySelector(".js-score").innerHTML=final;
+          document.querySelector(".js-moves").innerHTML=`you ${playermove} -- computer ${cm}`
+          document.querySelector(".js-result").innerHTML=result
         }
         update()
         
